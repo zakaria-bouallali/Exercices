@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakaria Bouallali</title>
+</head>
+<body>
+    
+
+    <script>
+
+        //ex1
+        const nums=[2,5,8,7,3];
+        const TrNum= nums.map(e=>e*3)
+        console.log(TrNum)
+    
+
+        //ex2
+        const personnes = [
+            { nom: "Rami", age: 33, estMember: true },
+            { nom: "Fatihi", age: 24, estMember: false },
+            { nom: "Chakib", age: 45, estMember: true },
+            { nom: "Mounir", age: 37, estMember: false },
+        ];
+        const arr = personnes.filter(e => e.estMember).map(e => e.nom)
+        console.log(arr)
+
+
+        //ex3
+        let inscriptions=[
+            {id:10,nom:'Rami',filiere:'DEV'},
+            {id:11,nom:'Kamali',filiere:'DEV'},
+            {id:12,nom:'Fahmi',filiere:'DEV'},
+            {id:13,nom:'Chaouki',filiere:'DEV'}
+        ];
+        const pureFunc = (obj) => {
+            inscriptions = [...inscriptions,obj]
+            return inscriptions
+        }
+        console.log(pureFunc({id:111,nom:'mpkkkkk',filiere:'DEV'}))
+
+    </script>
+</body>
+</html>
